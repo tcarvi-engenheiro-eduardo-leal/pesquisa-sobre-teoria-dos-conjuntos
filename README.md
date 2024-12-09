@@ -51,7 +51,7 @@
 			```
 		- e inclua:
 			- /docs/conceitos-gerais/00-conceitos.md
-	- Encontre textos e os substitua:
+	- Encontre o seguinte texto e o substitua:
 		- /docs/intro
 			- /docs/category/conceitos-gerais
 - Execução do site, em browser http://localhost:3000
