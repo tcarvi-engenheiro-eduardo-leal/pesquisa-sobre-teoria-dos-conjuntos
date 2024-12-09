@@ -39,17 +39,18 @@
 		- https://github.com/facebook/docusaurus
 			- https://github.com/tcarvi-engenheiro-eduardo-leal/pesquisa-sobre-teoria-dos-conjuntos
 	- Se você não usar uma rede social pessoal, exclua textos e links do Facebook.
-	- Apague pastas e markdowns do diretório website/docs/, e inclua:
-		- /docs/conceitos-gerais/_category_.json
-		```json
-		{
-			"label": "Conceitos Gerais",
-			"link": {
-  				"type": "generated-index",
-  				"description": "5 minutos para ler cada tópico do tutorial."
-			}				    }  
-		```
-	- Inclua pelo menos 1 arquivo markdown: /docs/conceitos-gerais/00-conceitos.md
+	- Apague pastas e markdowns do diretório website/docs/, 
+		- inclua:
+			- /docs/conceitos-gerais/_category_.json
+			```json			        {
+				"label": "Conceitos Gerais",
+				"link": {
+  					"type": "generated-index",
+  					"description": "5 minutos para ler cada tópico do tutorial."
+				}				 	   }  
+			```
+		- e inclua:
+			- /docs/conceitos-gerais/00-conceitos.md
 	- Encontre textos e os substitua:
 		- /docs/intro
 			- /docs/category/conceitos-gerais
