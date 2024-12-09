@@ -42,12 +42,14 @@
 	- Apague pastas e markdowns do diretório website/docs/, 
 		- inclua:
 			- /docs/conceitos-gerais/_category_.json
-			```json			        {
+			```json		
+	        {
 				"label": "Conceitos Gerais",
 				"link": {
   					"type": "generated-index",
   					"description": "5 minutos para ler cada tópico do tutorial."
-				}				 	   }  
+				}			
+	 	   }  
 			```
 		- e inclua:
 			- /docs/conceitos-gerais/00-conceitos.md
