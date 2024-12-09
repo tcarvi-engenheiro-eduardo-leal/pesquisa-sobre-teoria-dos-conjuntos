@@ -54,7 +54,7 @@
 	- Encontre o seguinte texto e o substitua:
 		- /docs/intro
 			- /docs/category/conceitos-gerais
-- Execução do site, em browser http://localhost:3001
+- Execução do site, em browser http://localhost:3004
 	- ```bash
 		cd website
 		```    
@@ -62,5 +62,5 @@
 		yarn install
 		```  
 	- ```bash
-		yarn start -p 30001
+		yarn start -p 30004
 		```  
