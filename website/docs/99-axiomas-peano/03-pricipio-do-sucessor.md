@@ -1,0 +1,2 @@
+# Princípio do sucessor
+- 

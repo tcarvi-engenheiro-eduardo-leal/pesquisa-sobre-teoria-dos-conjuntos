@@ -1,0 +1,2 @@
+# Princípio da Não Trivialidade
+- 

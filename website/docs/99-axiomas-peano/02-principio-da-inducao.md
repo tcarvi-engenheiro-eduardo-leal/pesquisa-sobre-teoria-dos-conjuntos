@@ -1,0 +1,30 @@
+# Princípio da Indução
+- O princípio da indução matemática diz que se pode concluir que uma hipótese é verdaderia devido uma lógica de indução. 
+- A indução reside no fato de:
+    - se considerar a existência dos elementos 0, k e k+1. 
+    - se considerar uma certa sentença como verdadeira para 0.
+    - Se considerar hipoteticamente que esta sentença também é verdadeira para k.
+    - Se considerar hipoteticamente que esta sentença também é verdadeira para k+1.
+    - Se testar algebricamente que a setença é válida para k e k+1.
+    - Se extrapolar a análise afirmando a sentença é válida para todos os elementos do conjunto dos números naturais devido lógica do pensamento matemátido da indução.
+- Prova em três etapas, com obrigação de se indicar onde se considerou a lógica da indução.
+    - Identificação da Base da indução:
+        - Você AFIRMA que o que se está provando tem valor verdadeiro para o primeiro número natural de base.
+            - Pode-se escolher 0 ou 1 para este elemento, a depender da descrição do conjunto dos números naturais analisado
+        - Você AFIRMA que o que se está provando tem valor verdadeiro para um número qualquer k.
+        - Você AFIRMA que o que se está provando tem valor verdadeiro para k + 1.
+        - Para afirmar as afirmações anteriores, você apenas precisa encontrar números que mostrem matematicamente a validade da setença. Você não provou nada ainda, pois não se prova nada com exemplos / dados triviais.
+    - Escreva o primeiro Argumento de Hipotese:
+        - Hipótese condicional:
+            - Se a sentença é verdadeira para K, também é verdadeira para k + 1.
+            - Antecedente: Sentença considerando k
+            - Consequente: Sentença considerando K + 1
+    - Escreva o segundo Argumento de Hipotese, com o quantificador:
+        - Hipótese condicional:
+            - Para todo e qualquer k pertencente ao conjunto N, se a sentença é verdadeira para K, também é verdadeira para k + 1.
+            - Quantificador: para todo e qualquer k
+            - Antecedente: Sentença considerando k
+            - Consequente: Sentença considerando K + 1
+    - Afirme a veracidade dos antecedentes e conseguentes com exemplos, dados triviais.
+    - Até aqui não se provou nada, apenas se apresentou exemplos que confirmam ideias!
+    - Usando o princípio da indução matemática, afirme, que as duas hipóteses são verdadeiras, conforme passos anteriores que mostram a aderência da análise à tipologogia do princípio da indução.
