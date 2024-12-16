@@ -93,7 +93,7 @@
 
 ## Definição de Complementar de um conjunto
 - Seja X um conjuntos definido em um universo U.
-- Definimos o complementar de X como o conjunto $\mathrm X^c =\ \{x \in U\ |\ x \not\in X \}$
+- Definimos o complementar de X como o conjunto $\mathrm X^c =\ \{c \in U\ |\ c \not\in X \}$
 
 ## Cardinalidade de Conjuntos
 - Quantidade de elementos que pertencem a um conjunto.
