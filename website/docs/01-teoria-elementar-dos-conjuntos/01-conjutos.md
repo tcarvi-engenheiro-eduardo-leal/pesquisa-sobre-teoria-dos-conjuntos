@@ -37,9 +37,9 @@
 ## Definição Ingênua de Conjunto
 - $\mathrm X\ =\ \{x\ \in \mathbb R\ \mathrm |\ P(x)\ \}$ é um conjunto.
     - Tendo considerado:
-        - x um objeto,
-        - $\mathbb R$ o conjunto Universo ao qual o elemento x perctence.
-        - e $\mathrm P(x)$ uma propriedade verdadeira que descreve o elemento $\mathrm x$;  
+        - x := um elemento
+        - $\mathbb R$ := o conjunto Universo ao qual o elemento x perctence.
+        - e $\mathrm P(x)$ := uma propriedade que descreve o elemento $\mathrm x$.
     - Sendo esta a definição de conjunto, também são válidas as afirmações:
         1. Se $\mathrm x$ satisfaz a propriedade $\mathrm P(x)$, isto é, se $\mathrm P(x)$ é uma proposição verdadeira, escrevemos $\mathrm x\ \in X$ e dizemos que x pertence a X. 
         2. Se $\mathrm x$ não satisfaz a propriedade $\mathrm P(x)$, isto é, se $\mathrm P(x)$ é uma proposição falsa, escrevemos $\mathrm x\ \notin X$ e dizemos que x não pertence a X.
