@@ -74,7 +74,7 @@
         - Para o conjunto X, usaremos Bhaskara para, a partir da regra de formação do conjunto, identificar os elementos deste conjunto.
         - Verificamos os dois pertencimentos, depois de ter definido seus elementos.
     - Planejamento terminado.
-        - A bse da demostração é saber o significado da igualdade. E saber que devemos verificar dois pertencimentos.
+        - A bse da demostração é saber a definição matemática da igualdade. E saber que devemos verificar dois pertencimentos, devido esta definição.
 
 ## Definição da Intersecção
 - Sejam X e Y conjuntos definidos em um mesmo universo U.
