@@ -78,11 +78,11 @@
 
 ## Definição da Intersecção
 - Sejam X e Y conjuntos definidos em um mesmo universo U.
-- Definimos A intersecção de X e Y como o conjunto $ W = \mathrm X\ \cap Y\ =\ \{w \in U\ |\ w \in X\ e\ w \in Y \}$
+- Definimos a Intersecção de X e Y como o conjunto $ I = \mathrm X\ \cap Y\ =\ \{i \in U\ |\ i \in X\ e\ i \in Y \}$
 
 ## Definição da Reunião
 - Sejam X e Y conjuntos definidos em um mesmo universo U.
-- Definimos A reunição de X e Y como o conjunto $ W = \mathrm X\ \cup Y\ =\ \{w \in U\ |\ w \in X\ ou\ w \in Y \}$
+- Definimos a Reunião de X e Y como o conjunto $ R = \mathrm X\ \cup Y\ =\ \{r \in U\ |\ r \in X\ ou\ r \in Y \}$
 
 ## Definição de Complementar de um conjunto em relação a outro conjunto
 - Sejam:
