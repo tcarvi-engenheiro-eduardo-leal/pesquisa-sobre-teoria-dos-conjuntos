@@ -6,6 +6,8 @@
     - $\mathbb Z $
 - Números racionais:
     - $\mathbb Q $
+- Números irracionais:
+    - $\mathbb I $
 - Números reais:
     - $\mathbb R $
 - Números complexos:
