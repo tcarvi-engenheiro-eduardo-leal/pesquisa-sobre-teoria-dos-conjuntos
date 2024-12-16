@@ -1,2 +1,1 @@
-# Teoria Elementar dos Conjuntos
-## Funções
+# Funções

@@ -1,5 +1,4 @@
-# Teoria Elementar dos Conjuntos
-## Conjuntos
+# Conjuntos
 - Números naturais: 
     - $\mathbb N $
 - Números inteiros:
