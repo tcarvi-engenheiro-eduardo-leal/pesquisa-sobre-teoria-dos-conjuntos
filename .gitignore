@@ -90,3 +90,4 @@ yarn.lock
 package-lock.json
 katex
 .vs
+.vscode
