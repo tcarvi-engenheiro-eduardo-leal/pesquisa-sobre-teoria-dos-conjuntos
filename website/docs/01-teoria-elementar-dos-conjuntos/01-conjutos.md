@@ -37,8 +37,8 @@
 ## Definição Ingênua de Conjunto
 - $\mathrm X\ =\ \{x\ \in \mathbb R\ \mathrm |\ P(x)\ \}$ é um conjunto.
     - Tendo considerado:
-        - x := um elemento
-        - $\mathbb R$ := o conjunto Universo ao qual o elemento x perctence.
+        - x := um elemento.
+        - $\mathbb R$ := o conjunto Universo ao qual o elemento x pertence.
         - e $\mathrm P(x)$ := uma propriedade que descreve o elemento $\mathrm x$.
     - Sendo esta a definição de conjunto, também são válidas as afirmações:
         1. Se $\mathrm x$ satisfaz a propriedade $\mathrm P(x)$, isto é, se $\mathrm P(x)$ é uma proposição verdadeira, escrevemos $\mathrm x\ \in X$ e dizemos que x pertence a X. 
@@ -48,7 +48,7 @@
 - $\mathrm X\ =\ \{x\ \in \mathbb R\ \mathrm |\ x^2\ -\ 2x\ -\ 3\ =\ 0 \}$
 - Quais elementos forma o conjunto X? 
 - Avalio a propriedade: $\mathrm x^2\ -\ 2x\ -\ 3\ =\ 0$  
-` - Devido fórmula de Bhaskara:  $\mathrm x\ =\ \frac{-\ b\ \pm \sqrt[2]{b^2 - 4 a c}}{2\ a}$, os valores possíveis de x são -1 e 3.  `
+    - Devido fórmula de Bhaskara:  $\mathrm x\ =\ \frac{-\ b\ \pm \sqrt[2]{b^2 - 4 a c}}{2\ a}$, os valores possíveis de x são -1 e 3.
 - Logo, $\mathrm X\ =\ \{-1,\ 3\}$.  [Q.E.D] quod erat demonstrandum
 
 ## Definição de Inclusão
