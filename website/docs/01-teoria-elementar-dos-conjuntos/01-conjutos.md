@@ -68,11 +68,13 @@
 - Planejamento da demostração:
     - Primeiro: Qual a definição da igualdade?
         - Deve-se indicar na demonstração a definição de igualdade.
-    - Por definição, para que X = Y, deve ser válida a hipótese $\mathrm X \subset Y$ e a hipótese $\mathrm Y \subset X$.
+        - Por definição, para que X = Y, deve ser válida a hipótese $\mathrm X \subset Y$ e a hipótese $\mathrm Y \subset X$.
     - Então, dividimos a demostração em duas verificações de inclusão. As duas devem ser verdadeiras.
         - Para verificar cada relação de inclusão, por sua vez, devemos verificar a relação de pertencimento de cada elemento do conjunto que está supostamente contido, no conjunto que supostamente deve conter o outro conjunto.
         - Para o conjunto X, usaremos Bhaskara para, a partir da regra de formação do conjunto, identificar os elementos deste conjunto.
+        - Verificamos os dois pertencimentos, depois de ter definido seus elementos.
     - Planejamento terminado.
+        - A bse da demostração é saber o significado da igualdade. E saber que devemos verificar dois pertencimentos.
 
 ## Definição da Intersecção
 - Sejam X e Y conjuntos definidos em um mesmo universo U.
