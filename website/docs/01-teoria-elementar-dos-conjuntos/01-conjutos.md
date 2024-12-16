@@ -74,15 +74,15 @@
         - Para o conjunto X, usaremos Bhaskara para, a partir da regra de formação do conjunto, identificar os elementos deste conjunto.
         - Verificamos os dois pertencimentos, depois de ter definido seus elementos.
     - Planejamento terminado.
-        - A bse da demostração é saber a definição matemática da igualdade. E saber que devemos verificar dois pertencimentos, devido esta definição.
+        - A base da demostração é saber a definição matemática da igualdade. E saber que devemos verificar dois pertencimentos, devido esta definição.
 
 ## Definição da Intersecção
 - Sejam X e Y conjuntos definidos em um mesmo universo U.
-- Definimos A intersecção de X e Y como o conjunto $\mathrm X\ \cap Y\ =\ \{x \in U\ |\ x \in X\ e\ x \in Y \}$
+- Definimos A intersecção de X e Y como o conjunto $ W = \mathrm X\ \cap Y\ =\ \{w \in U\ |\ w \in X\ e\ w \in Y \}$
 
 ## Definição da Reunião
 - Sejam X e Y conjuntos definidos em um mesmo universo U.
-- Definimos A reunição de X e Y como o conjunto $\mathrm X\ \cup Y\ =\ \{x \in U\ |\ x \in X\ ou\ x \in Y \}$
+- Definimos A reunição de X e Y como o conjunto $ W = \mathrm X\ \cup Y\ =\ \{w \in U\ |\ w \in X\ ou\ w \in Y \}$
 
 ## Definição de Complementar de um conjunto em relação a outro conjunto
 - Sejam:
