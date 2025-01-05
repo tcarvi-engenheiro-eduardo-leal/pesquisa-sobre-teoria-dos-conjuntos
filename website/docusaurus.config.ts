@@ -39,12 +39,10 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/tcarvi-engenheiro-eduardo-leal/pesquisa-sobre-teoria-dos-conjuntos/tree/main/',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
+          editUrl:
+            'https://github.com/tcarvi-engenheiro-eduardo-leal/pesquisa-sobre-teoria-dos-conjuntos/tree/main/',
         },
         blog: {
           showReadingTime: true,
