@@ -14,20 +14,20 @@
 - Descrição de conjuntos por:
     - Listagem de elementos: 
         - $\mathrm X = \{ 1, 2, 3, 4, 5, 6 \}$  
-        - Python code:  
+        - Python:  
         ```python
         X = {1, 2, 3, 4, 5, 6}
         ```
     - Listagem de elementos com acréscimo de reticências para omitir sequência óbvia: 
         - $\mathrm X = \{ 1, 2, 3, ..., 6 \}$  
-        - Python code:  
+        - Python:  
         ```python
         X = set(range(1,7))
         ```
     - Indicação de regras de pertencimento para seus elementos:
         - $\mathrm X = \{ x\ :\ x\ é\ um\ inteiro\ positivo\ não\ nulo\ menor\ que\ 7 \}$
         - $\mathrm X = \{ x\ |\ x\ é\ um\ inteiro\ positivo\ não\ nulo\ menor\ que\ 7 \}$  
-        - Python code:  
+        - Python:  
         ```python
         X = {element for element in range(1,7)}
         X = {element for element in range(1,7) if element < 7}
@@ -50,10 +50,44 @@
     - Devido fórmula de Bhaskara:  $\mathrm x\ =\ \frac{-\ b\ \pm \sqrt[2]{b^2 - 4 a c}}{2\ a}$, os valores possíveis de x são -1 e 3.
 - Logo, $\mathrm X\ =\ \{-1,\ 3\}$.  
 
+## Definição de Pertencimento
+- $\mathrm X\ =\ \{x\ \in \mathbb R\ \mathrm |\ x^2\ -\ 2x\ -\ 3\ =\ 0 \}$
+- Elemento "-1" pertence ao conjunto X.
+    - $\mathrm -1 \in X $  
+- Pergunta feita em script:
+    - O elemento "x" pertence a um conjunto "y"?
+    - Python:  
+    ```python
+    y = {-1, 3}
+    x = -1
+    x_pertece_a_y  = x in y  # True
+    ```  
+
+## Definição de Não Pertencimento
+- $\mathrm X\ =\ \{x\ \in \mathbb R\ \mathrm |\ x^2\ -\ 2x\ -\ 3\ =\ 0 \}$
+- Elemento "-8" não pertence ao conjunto X.
+    - $\mathrm -8 \not\in X $  
+- Pergunta feita em script:
+    - O elemento "-8" não pertence a um conjunto "y"?
+    - Python:  
+    ```python
+    y = {1, 3}
+    x = -8
+    x_nao_pertece_a_y  = x not in y # True
+    ```  
+
 ## Definição de Inclusão
 - Sejam X e Y conjuntos. 
 - Dizemos que X está contido em Y e escrevemos $\mathrm X \subset Y$, se todo elemento de X é um elemento de Y. Caso X não esteja contido em Y, escrevemos $\mathrm X \not\subset Y$.
 - Dizer que X não está contido em Y significa que existe pelo menos um elemento de X que não é elemento de Y.
+- Pergunta feita em script:
+    - Todos elementos de um conjunto estão dentro de outro conjunto?
+    - Python:  
+    ```python
+    a = {1, 3}
+    b = set(range(1,7))
+    a_eh_subset_of_b = a.issubset(b) # True
+    ```  
 
 ## Definição de Igualdade
 - Sejam X e Y dois conjuntos com o mesmo universo. Dizemos que X é igual a Y caso $\mathrm X \subset Y$ e $\mathrm Y \subset X$. Neste caso escrevemos $\mathrm X = Y$.
@@ -74,14 +108,35 @@
         - Verificamos os dois pertencimentos, depois de ter definido seus elementos.
     - Planejamento terminado.
         - A base da demostração é saber a definição matemática da igualdade. E saber que devemos verificar dois pertencimentos, devido esta definição.
+    ```python
+    a = {1, 3}
+    b = set(range(1,7))
+    a_eh_subset_of_b = a.issubset(b)
+    b_eh_subset_of_a = b.issubset(a) # or A.issuperset(B)
+    a_equal_b = a_eh_subset_of_b and b_eh_subset_of_a # False
+    ```  
 
 ## Definição da Intersecção
 - Sejam X e Y conjuntos definidos em um mesmo universo U.
 - Definimos a Intersecção de X e Y como o conjunto $ I = \mathrm X\ \cap Y\ =\ \{i \in U\ |\ i \in X\ e\ i \in Y \}$
+- Pergunta: Qual a intersecção entre dois conjuntos?
+    ```python
+    a = {1, 3}
+    b = set(range(1,7))   
+    intersection = a.intersection(b) # elements common to a and b
+    intersection = a & b             # elements common to a and b
+    ```  
 
 ## Definição da Reunião
 - Sejam X e Y conjuntos definidos em um mesmo universo U.
 - Definimos a Reunião de X e Y como o conjunto $ R = \mathrm X\ \cup Y\ =\ \{r \in U\ |\ r \in X\ ou\ r \in Y \}$
+- Pergunta: Qual a união entre dois conjuntos?
+    ```python
+    a = {1, 3}
+    b = set(range(1,7))
+    reunion = a.union(b) # elements from both a and b
+    reunion = a | b      # elements from both a and b
+    ```  
 
 ## Definição de Complementar de um conjunto em relação a outro conjunto
 - Sejam:
@@ -89,10 +144,34 @@
     - $\mathrm X \subset Y$
 - Definimos o complementar de X em relação a Y como o conjunto $C = \mathrm Y\ \setminus X\ =\ \{c \in U\ |\ c \in Y\ e\ c \not\in X \}$
     - Deve-se ter atenção na ordem. Se lê complementar de X em relação a Y, mas usa-se a notação  $\mathrm Y\ \setminus X$.
+- Pergunta: Qual o complementar de um conjunto A em relação ao conjunto B?
+    ```python
+    v = {1, 3}
+    w = set(range(1,7))
+    complementar_de_v_em_relacao_a_w = w.difference(v) # elements in a but not in b
+    complementar_de_v_em_relacao_a_w = w - v           # elements in a but not in b
+    w_minus_v = w - v
+    diferenca_de_v_em_relacao_a_w = w - v
+    ```  
 
-## Definição de Complementar de um conjunto
+## Definição de Diferença Simétria entre 2 conjuntos
 - Seja X um conjuntos definido em um universo U.
 - Definimos o complementar de X como o conjunto $\mathrm X^c =\ \{c \in U\ |\ c \not\in X \}$
+    ```python
+    a = {1, 3}
+    b = set(range(1,7))
+    symmetric_difference = b.symmetric_difference(a) # elements in either s or t but not both
+    ```  
+
+## Definição de Diferença Simétrica de 2 conjunto
+- Seja X um conjuntos definido em um universo U.
+- Definimos o complementar de X como o conjunto $\mathrm X^c =\ \{c \in U\ |\ c \not\in X \}$
+- Pergunta: Quais elementos existem em algum dos conjuntos, mas não existem nos dois ao mesmo tempo?
+    ```python
+    a = {1, 3}
+    b = set(range(1,7))
+    new_set = a.symmetric_difference(b) # {2, 4, 5, 6, 7 } # new set with elements in either s or t but not both
+    ```  
 
 ## Cardinalidade de Conjuntos
 - Quantidade de elementos que pertencem a um conjunto.
@@ -102,3 +181,53 @@
 	- $ n(A) $
 		- sendo:
 			- $ A $ := um conjunto qualquer
+    ```python
+    a = {1, 3}
+    cardinalidade_de_a = len(a) # 2
+    ```  
+
+
+```python
+a = {1, 3}
+
+s.update(t)
+
+s |= t
+
+return set s with elements added from t
+
+s.intersection_update(t)
+
+s &= t
+
+return set s keeping only elements also found in t
+
+s.difference_update(t)
+
+s -= t
+
+return set s after removing elements found in t
+
+s.symmetric_difference_update(t)
+
+s ^= t
+
+return set s with elements from s or t but not both
+
+s.add(x)
+
+add element x to set s
+
+s.remove(x)
+
+remove x from set s; raises KeyError if not present
+
+s.discard(x)
+
+removes x from set s if present
+
+s.pop()
+
+remove and return an arbitrary element from s; raises KeyError if empty
+
+```  

@@ -91,3 +91,4 @@ package-lock.json
 katex
 .vs
 .vscode
+.python
