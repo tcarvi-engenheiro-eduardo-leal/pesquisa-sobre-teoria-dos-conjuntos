@@ -34,6 +34,13 @@
 - Sejam X e Y conjuntos. 
 - Dizemos que X está contido em Y e escrevemos $\mathrm X \subset Y$, se todo elemento de X é um elemento de Y. Caso X não esteja contido em Y, escrevemos $\mathrm X \not\subset Y$.
 - Dizer que X não está contido em Y significa que existe pelo menos um elemento de X que não é elemento de Y.
+- Possui 3 propriedades matemáticas:
+    - Propriedade reflexiva:
+        - $ A \ \subset \ A $
+    - Propriedade antisimétrica:
+        - $ A \ \subset \ B \ e \ B \ \subset \ A \to A = B $
+    - Propriedade transitiva:
+        - $ A \ \subset \ B \ e \ B \ \subset \ C \to A \ \subset \ C $
 - Pergunta feita em script:
     - Todos elementos de um conjunto estão dentro de outro conjunto?
     - Python:  
