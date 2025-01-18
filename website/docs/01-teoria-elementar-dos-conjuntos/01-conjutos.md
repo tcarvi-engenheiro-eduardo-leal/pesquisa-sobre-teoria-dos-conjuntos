@@ -52,14 +52,14 @@
         1. Se $\mathrm x$ satisfaz a propriedade $\mathrm P(x)$, isto é, se $\mathrm P(x)$ é uma proposição verdadeira, escrevemos $\mathrm x\ \in X$ e dizemos que x pertence a X. 
         2. Se $\mathrm x$ não satisfaz a propriedade $\mathrm P(x)$, isto é, se $\mathrm P(x)$ é uma proposição falsa, escrevemos $\mathrm x\ \notin X$ e dizemos que x não pertence a X.
 
-### Exemplo de descrição de conjunto:
+### Exemplo de descrição de Conjunto:
 - $\mathrm X\ =\ \{x\ \in \mathbb R\ \mathrm |\ x^2\ -\ 2x\ -\ 3\ =\ 0 \}$
 - Quais elementos formam o conjunto X? 
     - Avalio a propriedade: $\mathrm x^2\ -\ 2x\ -\ 3\ =\ 0$  
         - Devido fórmula de Bhaskara:  $\mathrm x\ =\ \frac{-\ b\ \pm \sqrt[2]{b^2 - 4 a c}}{2\ a}$, os valores possíveis de x são -1 e 3.
     - Logo, $\mathrm X\ =\ \{-1,\ 3\}$.  
 
-## Definição de Pertencimento
+## Definição de Pertencimento de um Elemento em um Conjunto
 - $\mathrm X\ =\ \{x\ \in \mathbb R\ \mathrm |\ x^2\ -\ 2x\ -\ 3\ =\ 0 \}$
 - Elemento "-1" pertence ao conjunto X.
     - Dizemos: $\mathrm -1 \in X $  
@@ -74,7 +74,7 @@
     w_pertece_a_y  = w in y  # False
     ```  
 
-## Definição de Não Pertencimento
+## Definição de Não Pertencimento de um Elemento em um Conjunto
 - $\mathrm X\ =\ \{x\ \in \mathbb R\ \mathrm |\ x^2\ -\ 2x\ -\ 3\ =\ 0 \}$
 - Elemento "-8" não pertence ao conjunto X.
     - Dizemos: $\mathrm -8 \not\in X $  
@@ -89,7 +89,7 @@
     w_nao_pertece_a_y  = w not in y # False
     ```  
 
-## Definição de Inclusão
+## Definição de Inclusão de um Conjunto em outro Conjunto
 - Sejam X e Y conjuntos. 
 - Dizemos que X está contido em Y e escrevemos $\mathrm X \subset Y$, se todo elemento de X é um elemento de Y. Caso X não esteja contido em Y, escrevemos $\mathrm X \not\subset Y$.
 - Dizer que X não está contido em Y significa que existe pelo menos um elemento de X que não é elemento de Y.
@@ -104,10 +104,10 @@
     a_eh_subset_of_c = a.issubset(c) # False
     ```  
 
-## Definição de Igualdade
-- Sejam X e Y dois conjuntos com o mesmo universo. Dizemos que X é igual a Y caso $\mathrm X \subset Y$ e $\mathrm Y \subset X$. Neste caso escrevemos $\mathrm X = Y$.
-- X é igual a Y se e somente se estes conjuntos possuem os mesmos elementos.
-- Por definição, para demonstrar que um conjunto X é igual a um conjunto Y, devemos verificar duas inclusões: $\mathrm X \subset Y$ e $\mathrm Y \subset X$.
+## Definição de Igualdade entre Conjuntos
+- Sejam X e Y dois conjuntos que estão contidos em um mesmo conjunto universo. Dizemos que X é igual a Y caso $\mathrm X \subset Y$ e $\mathrm Y \subset X$. Neste caso escrevemos $\mathrm X = Y$.
+    - X é igual a Y se e somente se estes conjuntos possuem os mesmos elementos.
+    - Por definição, para demonstrar que um conjunto X é igual a um conjunto Y, devemos verificar as duas inclusões indicadas: $\mathrm X \subset Y$ e $\mathrm Y \subset X$.
 
 ## Como demostrar a igualdade de conjuntos?
 - $\mathrm X\ =\ \{x\ \in \mathbb R\ \mathrm |\ x^2\ -\ 2x\ -\ 3\ =\ 0 \}$
@@ -118,20 +118,25 @@
         - Deve-se indicar na demonstração a definição de igualdade.
         - Por definição, para que X = Y, deve ser válida a hipótese $\mathrm X \subset Y$ e a hipótese $\mathrm Y \subset X$.
     - Então, dividimos a demostração em duas verificações de inclusão. As duas devem ser verdadeiras.
-        - Para verificar cada relação de inclusão, por sua vez, devemos verificar a relação de pertencimento de cada elemento do conjunto que está supostamente contido, no conjunto que supostamente deve conter o outro conjunto.
+        - Para verificar cada relação de inclusão, por sua vez, devemos verificar a relação de pertencimento de cada elemento, do conjunto que está supostamente contido, no conjunto que supostamente contém o outro conjunto.
         - Para o conjunto X, usaremos Bhaskara para, a partir da regra de formação do conjunto, identificar os elementos deste conjunto.
-        - Verificamos os dois pertencimentos, depois de ter definido seus elementos.
+        - Verificamos os pertencimentos dos elementos, para cada relação de "estar contido", depois de ter definido seus elementos.
+        - Se as duas relações de "estar contido" tiverem valor booleano verdadeiro, a relação de igualdade será verdadeira.
     - Planejamento terminado.
-        - A base da demostração é saber a definição matemática da igualdade. E saber que devemos verificar dois pertencimentos, devido esta definição.
     ```python
     a = {1, 3}
-    b = set(range(1,7))
+    b = set(range(1,4))
     a_eh_subset_of_b = a.issubset(b)
     b_eh_subset_of_a = b.issubset(a) # or A.issuperset(B)
-    a_equal_b = a_eh_subset_of_b and b_eh_subset_of_a # False
+    a_equal_b = a_eh_subset_of_b and b_eh_subset_of_a # True
+    c = {1, 3}
+    d = set(range(1,7))
+    c_eh_subset_of_d = c.issubset(d)
+    d_eh_subset_of_c = d.issubset(c) # or C.issuperset(d)
+    c_equal_d = c_eh_subset_of_d and d_eh_subset_of_c # False
     ```  
 
-## Definição da Intersecção
+## Definição da Intersecção entre Conjuntos
 - Sejam X e Y conjuntos definidos em um mesmo universo U.
 - Definimos a Intersecção de X e Y como o conjunto $ I = \mathrm X\ \cap Y\ =\ \{i \in U\ |\ i \in X\ e\ i \in Y \}$
 - Pergunta: Qual a intersecção entre dois conjuntos?
@@ -142,7 +147,7 @@
     intersection = a & b             # elements common to a and b
     ```  
 
-## Definição da Reunião
+## Definição da Reunião entre Conjuntos
 - Sejam X e Y conjuntos definidos em um mesmo universo U.
 - Definimos a Reunião de X e Y como o conjunto $ R = \mathrm X\ \cup Y\ =\ \{r \in U\ |\ r \in X\ ou\ r \in Y \}$
 - Pergunta: Qual a união entre dois conjuntos?
