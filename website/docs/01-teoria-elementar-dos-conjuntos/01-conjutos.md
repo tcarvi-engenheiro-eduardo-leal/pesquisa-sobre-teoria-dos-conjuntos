@@ -1,4 +1,11 @@
 # Conjuntos
+
+## Definição:
+- Coleção de elementos.
+- Cada elemento contido em um conjunto é uma única entidade (distinta das demais).
+- Os elementos de um conjunto não possuem uma ordem específica.
+
+## Conjuntos Numéricos: 
 - Números naturais: 
     - $\mathbb N $
 - Números inteiros:
@@ -11,69 +18,75 @@
     - $\mathbb R $
 - Números complexos:
     - $\mathbb C $
-- Descrição de conjuntos por:
-    - Listagem de elementos: 
-        - $\mathrm X = \{ 1, 2, 3, 4, 5, 6 \}$  
-        - Python:  
-        ```python
-        X = {1, 2, 3, 4, 5, 6}
-        ```
-    - Listagem de elementos com acréscimo de reticências para omitir sequência óbvia: 
-        - $\mathrm X = \{ 1, 2, 3, ..., 6 \}$  
-        - Python:  
-        ```python
-        X = set(range(1,7))
-        ```
-    - Indicação de regras de pertencimento para seus elementos:
-        - $\mathrm X = \{ x\ :\ x\ é\ um\ inteiro\ positivo\ não\ nulo\ menor\ que\ 7 \}$
-        - $\mathrm X = \{ x\ |\ x\ é\ um\ inteiro\ positivo\ não\ nulo\ menor\ que\ 7 \}$  
-        - Python:  
-        ```python
-        X = {element for element in range(1,7)}
-        X = {element for element in range(1,7) if element < 7}
-        X = {element + 0 for element in range(1,7) if element < 7}
-        ```  
-## Definição Ingênua de Conjunto
+
+## Representação de Conjuntos:
+- Listagem de elementos: 
+    - $\mathrm X = \{ 1, 2, 3, 4, 5, 6 \}$  
+    - Python:  
+    ```python
+    X = {1, 2, 3, 4, 5, 6}
+    ```
+- Listagem de elementos com acréscimo de reticências para omitir sequência óbvia: 
+    - $\mathrm X = \{ 1, 2, 3, ..., 6 \}$  
+    - Python:  
+    ```python
+    X = set(range(1,7))
+    ```
+- Indicação de regras de pertencimento para seus elementos:
+    - $\mathrm X = \{ x\ :\ x\ é\ um\ inteiro\ positivo\ não\ nulo\ menor\ que\ 7 \}$
+    - $\mathrm X = \{ x\ |\ x\ é\ um\ inteiro\ positivo\ não\ nulo\ menor\ que\ 7 \}$  
+    - Python:  
+    ```python
+    X = {element for element in range(1,7)}
+    X = {element for element in range(1,7) if element < 7}
+    X = {element + 0 for element in range(1,7) if element < 7}
+    ```  
+
+## Definição Ingênua (não formal) de Conjunto
 - $\mathrm X\ =\ \{x\ \in \mathbb R\ \mathrm |\ P(x)\ \}$ é um conjunto.
     - Tendo considerado:
         - x := um elemento.
         - $\mathbb R$ := o conjunto Universo ao qual o elemento x pertence.
-        - e $\mathrm P(x)$ := uma propriedade que descreve o elemento $\mathrm x$.
+        - e $\mathrm P(x)$ := uma propriedade que descreve o elemento $\mathrm x$ e tem valor booleano verdadeiro.
     - Sendo esta a definição de conjunto, também são válidas as afirmações:
         1. Se $\mathrm x$ satisfaz a propriedade $\mathrm P(x)$, isto é, se $\mathrm P(x)$ é uma proposição verdadeira, escrevemos $\mathrm x\ \in X$ e dizemos que x pertence a X. 
         2. Se $\mathrm x$ não satisfaz a propriedade $\mathrm P(x)$, isto é, se $\mathrm P(x)$ é uma proposição falsa, escrevemos $\mathrm x\ \notin X$ e dizemos que x não pertence a X.
 
 ### Exemplo de descrição de conjunto:
 - $\mathrm X\ =\ \{x\ \in \mathbb R\ \mathrm |\ x^2\ -\ 2x\ -\ 3\ =\ 0 \}$
-- Quais elementos forma o conjunto X? 
-- Avalio a propriedade: $\mathrm x^2\ -\ 2x\ -\ 3\ =\ 0$  
-    - Devido fórmula de Bhaskara:  $\mathrm x\ =\ \frac{-\ b\ \pm \sqrt[2]{b^2 - 4 a c}}{2\ a}$, os valores possíveis de x são -1 e 3.
-- Logo, $\mathrm X\ =\ \{-1,\ 3\}$.  
+- Quais elementos formam o conjunto X? 
+    - Avalio a propriedade: $\mathrm x^2\ -\ 2x\ -\ 3\ =\ 0$  
+        - Devido fórmula de Bhaskara:  $\mathrm x\ =\ \frac{-\ b\ \pm \sqrt[2]{b^2 - 4 a c}}{2\ a}$, os valores possíveis de x são -1 e 3.
+    - Logo, $\mathrm X\ =\ \{-1,\ 3\}$.  
 
 ## Definição de Pertencimento
 - $\mathrm X\ =\ \{x\ \in \mathbb R\ \mathrm |\ x^2\ -\ 2x\ -\ 3\ =\ 0 \}$
 - Elemento "-1" pertence ao conjunto X.
-    - $\mathrm -1 \in X $  
+    - Dizemos: $\mathrm -1 \in X $  
 - Pergunta feita em script:
     - O elemento "x" pertence a um conjunto "y"?
     - Python:  
     ```python
     y = {-1, 3}
     x = -1
+    w = 4
     x_pertece_a_y  = x in y  # True
+    w_pertece_a_y  = w in y  # False
     ```  
 
 ## Definição de Não Pertencimento
 - $\mathrm X\ =\ \{x\ \in \mathbb R\ \mathrm |\ x^2\ -\ 2x\ -\ 3\ =\ 0 \}$
 - Elemento "-8" não pertence ao conjunto X.
-    - $\mathrm -8 \not\in X $  
+    - Dizemos: $\mathrm -8 \not\in X $  
 - Pergunta feita em script:
     - O elemento "-8" não pertence a um conjunto "y"?
     - Python:  
     ```python
     y = {1, 3}
     x = -8
+    w = 3
     x_nao_pertece_a_y  = x not in y # True
+    w_nao_pertece_a_y  = w not in y # False
     ```  
 
 ## Definição de Inclusão
@@ -86,7 +99,9 @@
     ```python
     a = {1, 3}
     b = set(range(1,7))
+    c = set(range(1,3))
     a_eh_subset_of_b = a.issubset(b) # True
+    a_eh_subset_of_c = a.issubset(c) # False
     ```  
 
 ## Definição de Igualdade
