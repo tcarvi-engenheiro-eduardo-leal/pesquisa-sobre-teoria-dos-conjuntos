@@ -59,6 +59,10 @@
         - Devido fórmula de Bhaskara:  $\mathrm x\ =\ \frac{-\ b\ \pm \sqrt[2]{b^2 - 4 a c}}{2\ a}$, os valores possíveis de x são -1 e 3.
     - Logo, $\mathrm X\ =\ \{-1,\ 3\}$.  
 
+### Conjunto da partes de um Conjunto A
+- Seja A = \{a, b, c\}
+- $ \wp(A) = \{ \{ \}, \{a\}, \{b\}, \{c\}, \{a,b\}, \{a,c\}, \{b,c\}, \{a,b,c\} \} $
+
 ## Cardinalidade de Conjuntos
 - Quantidade de elementos que pertencem a um conjunto.
 - Símbolo:

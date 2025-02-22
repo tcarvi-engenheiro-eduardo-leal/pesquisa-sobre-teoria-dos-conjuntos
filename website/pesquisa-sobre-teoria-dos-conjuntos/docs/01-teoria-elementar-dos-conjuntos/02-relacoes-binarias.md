@@ -41,6 +41,14 @@
         - $ A \ \subset \ B \ e \ B \ \subset \ A \to A = B $
     - Propriedade transitiva:
         - $ A \ \subset \ B \ e \ B \ \subset \ C \to A \ \subset \ C $
+    - Propriedade de poder estar contido de forma própria:
+        - $ A \ \subset \ B \ e \ A \ne B $
+        - $ A \ ö \ B $
+    - O conjunto vazio está contido em A, para qualquer conjunto A, isto é, ∅ ∈ A, ∀A. 
+        - De fato, suponha suponha que ∅ ⊄ A, para algum conjunto A. 
+        - Isso significa que existe algum elemento, digamos x, do conjunto vazio que não está em A.
+        - O que é uma contradição, pois o conjunto vazio não possui elementos.
+        - Logo, por contradição, concluímos que ∅ ∈ A.
 - Pergunta feita em script:
     - Todos elementos de um conjunto estão dentro de outro conjunto?
     - Python:  
@@ -55,6 +63,7 @@
 ## Igualdade entre Conjuntos
 - Sejam X e Y dois conjuntos que estão contidos em um mesmo conjunto universo. Dizemos que X é igual a Y caso $\mathrm X \subset Y$ e $\mathrm Y \subset X$. Neste caso escrevemos $\mathrm X = Y$.
     - X é igual a Y se e somente se estes conjuntos possuem os mesmos elementos.
+    - $ X = Y \iff \ \mathrm X \subset Y \ e \ \mathrm Y \subset X $
     - Por definição, para demonstrar que um conjunto X é igual a um conjunto Y, devemos verificar as duas inclusões indicadas: $\mathrm X \subset Y$ e $\mathrm Y \subset X$.
 
 ### Como demostrar a igualdade de conjuntos?
@@ -158,6 +167,7 @@
 - Definição: 
     - $ A \times B = \{(a, b) \mid a \in A \text{ e } b \in B\} $
 - Para identificar os pares ordenados, deve considerar a formação de pares, pegando para cada elemento de A na primeira posição, todos os elementos de B na segunda posição.
+- Qualquer subconjunto do produto cartesiano A x B é chamado de relação binária dos conjuntos A e B.
 
 ## Adição de Elementos em um Conjunto
 - Seja A e B conjuntos definidos em um universo U.
